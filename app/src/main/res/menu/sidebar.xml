@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+        <item
+            android:title="@string/wallpaper"
+            android:id="@+id/walpaper"
+            android:icon="@drawable/baseline_wallpaper_24" />
+        <item
+            android:title="@string/rington"
+            android:id="@+id/ring"
+            android:icon="@drawable/baseline_phonelink_ring_24"/>
+        <item
+            android:title="@string/hd_wallpaper"
+            android:id="@+id/hdwalp"
+            android:icon="@drawable/baseline_wallpaper_24"/>
+        <item
+            android:title="@string/setting"
+            android:id="@+id/set"
+            android:icon="@drawable/settone"/>
+
+</menu>

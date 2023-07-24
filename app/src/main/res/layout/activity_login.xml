@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg"
+    tools:context=".login">
+
+
+    <ImageView
+
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_gravity="center"
+        android:padding="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:layout_marginRight="@dimen/_100sdp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="sign in to continue"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_90sdp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <EditText
+        android:id="@+id/emaillogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:ems="10"
+        android:textSize="@dimen/_15ssp"
+        android:hint="email"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_45sdp"
+        android:inputType="textEmailAddress" />
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_100sdp"
+        android:text="Password"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/passwordlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="@dimen/_14ssp"
+        android:hint="password"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:inputType="textPassword" />
+
+
+
+    <Button
+        android:id="@+id/buttonlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Need an account"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_12sdp"/>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>

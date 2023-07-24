@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photobg"
+    tools:context=".signup">
+
+
+
+  <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rgprofile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:src="@drawable/photocamera" />
+
+    <TextView
+        android:id="@+id/si"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:padding="@dimen/_1sdp"
+        android:text="Creat new account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30sdp" />
+
+
+
+
+
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_30sdp"
+      android:layout_marginEnd="@dimen/_30sdp"
+      android:id="@+id/rgusername"
+      android:layout_below="@id/rgprofile"
+      style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="username" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_30sdp"
+      android:layout_below="@+id/rgusername"
+      android:layout_marginEnd="@dimen/_30sdp"
+      android:id="@+id/rgemail"
+
+      style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:singleLine="true"
+        android:maxLines="1" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_30sdp"
+      android:layout_marginEnd="@dimen/_30sdp"
+      android:id="@+id/rgpassword"
+      android:layout_below="@+id/rgemail"
+      style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="password"
+        android:id="@+id/pass"/>
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_30sdp"
+      android:layout_marginEnd="@dimen/_30sdp"
+      android:id="@+id/rgrepassword"
+      android:layout_below="@+id/rgpassword"
+      style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Repassword"
+        android:id="@+id/repass"/>
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/rglog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_below="@id/rgsignup"
+        android:padding="@dimen/_10sdp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp" />
+
+    <Button
+        android:id="@+id/rgsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+       android:layout_below="@id/rgrepassword"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:backgroundTint="@color/black"
+        android:text="SIGNUP"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25ssp" />
+
+
+
+</RelativeLayout>
